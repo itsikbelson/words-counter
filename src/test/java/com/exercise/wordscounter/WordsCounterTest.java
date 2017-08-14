@@ -24,6 +24,8 @@ public class WordsCounterTest {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
 
+    private WordsCounter wordsCounter = new WordsCounter();
+
     @Before
     public void setUpStreams() {
         System.setOut(new PrintStream(outContent));
@@ -76,7 +78,8 @@ public class WordsCounterTest {
 
         String expectedOutput = getExpectedOutput(testFilesPath);
 
-        WordsCounter.main(inputFiles);
+        wordsCounter.load(inputFiles);
+        wordsCounter.displayStatus();
 
         Assert.assertEquals(expectedOutput, outContent.toString());
 

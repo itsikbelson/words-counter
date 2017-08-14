@@ -30,7 +30,7 @@ public class WordsCounter {
         wc.displayStatus();
     }
 
-    private void load(String... fileNames) {
+    public void load(String... fileNames) {
         ForkJoinPool pool = new ForkJoinPool(getParallelism(fileNames.length));
         try {
             pool.submit(() -> Arrays.stream(fileNames).parallel().forEach(this::countWords)).get();
@@ -39,7 +39,7 @@ public class WordsCounter {
         }
     }
 
-    private void displayStatus() {
+    public void displayStatus() {
         System.out.println(getStatusDisplay());
     }
 
