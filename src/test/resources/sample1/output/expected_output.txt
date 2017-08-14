@@ -1,0 +1,11 @@
+and 1
+file 3
+first 1
+is 3
+one 1
+second 1
+the 3
+third 1
+this 3
+
+** total: 17

@@ -1,0 +1,9 @@
+encourage 80000
+fly. 80000
+i 80000
+not 80000
+others 80000
+to 80000
+will 80000
+
+** total: 560000

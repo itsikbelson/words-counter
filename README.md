@@ -11,5 +11,5 @@ In order to run the application, run:<br>
 words will be counted on all files together
 
 Example:
-* `java -jar build/libs/words-counter.jar build/resources/test/file1.txt build/resources/test/file2.txt build/resources/test/file3.txt`
+* `java -jar build/libs/words-counter.jar build/resources/test/sample1/input/File1.txt build/resources/test/sample1/input/File2.txt build/resources/test/sample1/input/File3.txt`
 
