@@ -1,4 +1,4 @@
-# Words counter
+# Words Counter
 This program calculates words count from multiple files in multiple trheads
 
 ## Build
